@@ -2,39 +2,40 @@
   height: 100%;
 } */
 
+/* header */
 .nflShield {
   height: 50px;
   width: auto;
+}
+h1 {
+  margin: 0px 20px;
 }
 .sortingHat {
   height: 50px;
   width: 50px;
 }
-h1 {
-  margin: 0px 20px;
-}
+.nflShield,
 h1,
-.sortingHat,
-.nflShield {
+.sortingHat {
   display: inline-block;
   vertical-align: middle;
 }
 
+/* body */
 body {
   text-align: center;
   background-color: #f2f2f2;
 }
 
+/* font for all content */
 button,
 h1,
 h3,
 h4 {
   font-family: "Verdana";
 }
-h4 {
-  width: 270px;
-}
 
+/* sort team button */
 button {
   background-color: rgb(39, 75, 254);
   border: none;
@@ -53,7 +54,6 @@ button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
 .disabled {
   opacity: 0.6;
 }
@@ -63,8 +63,8 @@ button:hover {
   cursor: default;
 }
 
+/* team styling */
 .teamWrap {
-  text-align: center;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease-out;
@@ -73,9 +73,20 @@ button:hover {
   display: inline-block;
   text-align: left;
   background-color: #f2f2f2;
+  width: 270px;
   margin-left: 110px;
 }
+.inline {
+  display: inline;
+}
+.addLineBreak:after {
+  content: "\A";
+  white-space: pre;
+  line-height: 30px;
+}
 
+/* reload button */
 .reloadButton {
   background-color: red;
+  margin: 50px 0px;
 }
